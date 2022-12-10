@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My_dsu</string>
+    <string name="title_dashboard">DashBoard</string>
+    <string name="title_starred">Starred</string>
+    <string name="title_add_records">Add Records</string>
+    <string name="title_search">Search</string>
+    <string name="title_setting">Settings</string>
+</resources>
