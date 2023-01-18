@@ -1,4 +1,4 @@
-package com.example.my_dsu.ui.favourites
+package com.example.my_dsu.ui.addRecords
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,32 +7,28 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.my_dsu.databinding.FragmentFavouriteBinding
-import com.example.my_dsu.databinding.FragmentHomeBinding
+import com.example.my_dsu.databinding.FragmentAddRecordBinding
+import com.example.my_dsu.ui.favourites.FavouriteViewModel
 import com.example.my_dsu.ui.home.HomeViewModel
 
-class FavouriteFragment : Fragment() {
+class AddRecordFragment: Fragment() {
 
-
-    private var _binding : FragmentFavouriteBinding? = null
+    private var _binding :FragmentAddRecordBinding? =null
 
     private val binding get() = _binding!!
-    
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
-        val favouriteViewModel =
+        val addRecordBinding =
             ViewModelProvider(this).get(FavouriteViewModel::class.java)
-        return super.onCreateView(inflater, container, savedInstanceState)
-
-        _binding = FragmentFavouriteBinding.inflate(inflater, container, false)
+        _binding = FragmentAddRecordBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textFavourites
-        favouriteViewModel.text.observe(viewLifecycleOwner) {
+        val textView: TextView = binding.textAddRecord
+        addRecordBinding.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root

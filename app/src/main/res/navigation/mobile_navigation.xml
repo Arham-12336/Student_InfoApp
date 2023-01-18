@@ -15,15 +15,15 @@
     <fragment
         android:id="@+id/navigation_favourites"
         android:name="com.example.my_dsu.ui.favourites.FavouriteFragment"
-        android:label="@string/title_starred"
+        android:label="@string/title_favourite"
         tools:layout="@layout/fragment_favourite"
         />
 
     <fragment
         android:id="@+id/navigation_add_records"
-        android:name="com.example.my_dsu.ui.notifications.NotificationsFragment"
+        android:name="com.example.my_dsu.ui.addRecords.AddRecordFragment"
         android:label="@string/title_add_records"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_add_record" />
 
     <fragment
         android:id="@+id/navigation_search"
