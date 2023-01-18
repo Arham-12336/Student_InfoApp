@@ -26,8 +26,6 @@ class FavouriteFragment : Fragment() {
 
         val favouriteViewModel =
             ViewModelProvider(this).get(FavouriteViewModel::class.java)
-        return super.onCreateView(inflater, container, savedInstanceState)
-
         _binding = FragmentFavouriteBinding.inflate(inflater, container, false)
         val root: View = binding.root
 

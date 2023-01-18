@@ -27,13 +27,13 @@
 
     <fragment
         android:id="@+id/navigation_search"
-        android:name="com.example.my_dsu.ui.notifications.NotificationsFragment"
+        android:name="com.example.my_dsu.ui.search.SearchFragment"
         android:label="@string/title_search"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_search" />
 
     <fragment
         android:id="@+id/navigation_settings"
-        android:name="com.example.my_dsu.ui.notifications.NotificationsFragment"
+        android:name="com.example.my_dsu.ui.settings.SettingFragment"
         android:label="@string/title_setting"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_setting" />
 </navigation>

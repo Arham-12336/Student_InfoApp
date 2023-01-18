@@ -23,7 +23,7 @@ class AddRecordFragment: Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val addRecordBinding =
-            ViewModelProvider(this).get(FavouriteViewModel::class.java)
+            ViewModelProvider(this).get(AddRecordViewModel::class.java)
         _binding = FragmentAddRecordBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
