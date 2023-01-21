@@ -25,7 +25,7 @@
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginStart="10dp"
-                android:src="@drawable/image_avatar"
+                android:src="@drawable/ic_baseline_star_24"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
@@ -39,8 +39,7 @@
                 android:layout_marginStart="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/iv_fav_img"
-                app:layout_constraintTop_toTopOf="@+id/iv_fav_img"
-                tools:ignore="MissingConstraints" />
+                app:layout_constraintTop_toTopOf="@+id/iv_fav_img"/>
 
             <TextView
                 android:id="@+id/tv_fav_desc"
@@ -52,8 +51,7 @@
                 app:layout_constraintBottom_toBottomOf="@+id/iv_fav_img"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/iv_fav_img"
-                app:layout_constraintTop_toBottomOf="@+id/tv_fav_name"
-                tools:ignore="MissingConstraints" />
+                app:layout_constraintTop_toBottomOf="@+id/tv_fav_name" />
 
             <ImageView
                 android:id="@+id/iv_icon_fav"

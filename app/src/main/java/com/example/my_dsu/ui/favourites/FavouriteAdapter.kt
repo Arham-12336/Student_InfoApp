@@ -9,9 +9,6 @@ import com.example.my_dsu.model.datamodel.FavouriteRecord
 
 class FavouriteAdapter(private val fav_record:List<FavouriteRecord>):RecyclerView.Adapter<FavouriteAdapter.FavViewHolder>() {
 
-
-
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FavViewHolder {
         return FavViewHolder(ItemLikedFavRecBinding.inflate(LayoutInflater.from(parent.context),parent,false))
     }
@@ -21,12 +18,10 @@ class FavouriteAdapter(private val fav_record:List<FavouriteRecord>):RecyclerVie
         holder.binding.tvFavName.text=fav_record.name
         if(!fav_record.isFav)
             holder.binding.ivIconFav.visibility= View.GONE
-
     }
 
     override fun getItemCount(): Int {
         return fav_record.size
     }
     class FavViewHolder(val binding: ItemLikedFavRecBinding):RecyclerView.ViewHolder(binding.root)
-//    class FavViewHolder(val binding: ItemUnlikeFavRecBinding):RecyclerView.ViewHolder(binding.root)
 }
