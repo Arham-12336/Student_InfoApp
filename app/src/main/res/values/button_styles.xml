@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Circular">
+        <item name="cornerSize">55%</item>
+    </style>
+    <style name="FabShape5">
+        <item name="cornerSize">50%</item>
+        <item name="cornerFamily">cut</item>
+    </style>
+    <style name="Button8">
+        <item name="cornerSizeBottomRight">70%</item>
+        <item name="cornerSizeBottomLeft">70%</item>
+        <item name="cornerSizeTopLeft">40%</item>
+        <item name="cornerSizeTopRight">40%</item>
+    </style>
+
+</resources>
