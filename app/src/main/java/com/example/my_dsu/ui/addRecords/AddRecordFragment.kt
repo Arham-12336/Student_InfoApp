@@ -1,15 +1,20 @@
 package com.example.my_dsu.ui.addRecords
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
+import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.my_dsu.databinding.FragmentAddRecordBinding
-import com.example.my_dsu.ui.favourites.FavouriteViewModel
-import com.example.my_dsu.ui.home.HomeViewModel
+import com.example.my_dsu.model.database.RecordDatabase
+import com.example.my_dsu.model.datamodel.Record
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
+import kotlin.random.Random
 
 class AddRecordFragment: Fragment() {
 
@@ -22,15 +27,34 @@ class AddRecordFragment: Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val addRecordBinding =
+        val addRecordViewModel =
             ViewModelProvider(this).get(AddRecordViewModel::class.java)
         _binding = FragmentAddRecordBinding.inflate(inflater, container, false)
         val root: View = binding.root
+        val writeRecordBtn: Button = binding.btnWriteData
+        writeRecordBtn.setOnClickListener {
+            val addName = binding.etFirstName
+            val addDescription = binding.etLastName
+            if(addName.text.isNotBlank()) {
+                val newRecord = Record(
+                    Random.nextInt(0, 10000000),
+                    1,
+                    addName.text.toString(),
+                    addDescription.text.toString(),
+                );
+                GlobalScope.launch(Dispatchers.IO) {
+                    Log.d("In Corutine", "addRecord: ")
+                    val db = RecordDatabase.getInstance(requireContext());
+                    db.recordDao().insert(newRecord)
+                }
 
-        val textView: TextView = binding.textAddRecord
-        addRecordBinding.text.observe(viewLifecycleOwner) {
-            textView.text = it
+                addName.setText("")
+                addDescription.setText("")
+
+            }
         }
+
+
         return root
     }
 
