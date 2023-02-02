@@ -33,8 +33,8 @@ class AddRecordFragment: Fragment() {
         val root: View = binding.root
         val writeRecordBtn: Button = binding.btnWriteData
         writeRecordBtn.setOnClickListener {
-            val addName = binding.etFirstName
-            val addDescription = binding.etLastName
+            val addName = binding.et_first_name
+            val addDescription = binding.et_last_name
             if(addName.text.isNotBlank()) {
                 val newRecord = Record(
                     Random.nextInt(0, 10000000),

@@ -5,14 +5,16 @@
         android:id="@+id/navigation_dashboard"
         android:icon="@drawable/ic_home_black_24dp"
         android:title="@string/title_dashboard" />
+
     <item
         android:id="@+id/navigation_favourites"
-        android:icon="@drawable/ic_baseline_star_24"
-        android:title="@string/title_favourite" />
+        android:icon="@drawable/ic_baseline_favorite_24"
+        android:title="@string/title_favourites" />
+
     <item
-        android:id="@+id/navigation_add_records"
+        android:id="@+id/navigation_addRecords"
         android:icon="@drawable/ic_baseline_add_24"
-        android:title="@string/title_add_records" />
+        android:title="@string/title_addRecords" />
 
     <item
         android:id="@+id/navigation_search"
@@ -22,6 +24,6 @@
     <item
         android:id="@+id/navigation_settings"
         android:icon="@drawable/ic_baseline_settings_24"
-        android:title="@string/title_setting" />
+        android:title="@string/title_settings" />
 
 </menu>

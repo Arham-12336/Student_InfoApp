@@ -8,32 +8,37 @@
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.example.my_dsu.ui.dashboard.DashboardFragment"
+        android:name="com.example.testing.ui.dashboard.DashboardFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
         android:id="@+id/navigation_favourites"
-        android:name="com.example.my_dsu.ui.favourites.FavouriteFragment"
-        android:label="@string/title_favourite"
-        tools:layout="@layout/fragment_favourite"
-        />
+        android:name="com.example.testing.ui.favourites.FavouriteFragment"
+        android:label="@string/title_favourites"
+        tools:layout="@layout/fragment_notifications" />
 
     <fragment
-        android:id="@+id/navigation_add_records"
-        android:name="com.example.my_dsu.ui.addRecords.AddRecordFragment"
-        android:label="@string/title_add_records"
-        tools:layout="@layout/fragment_add_record" />
+        android:id="@+id/navigation_addRecords"
+        android:name="com.example.testing.ui.addRecord.AddRecordFragment"
+        android:label="@string/title_addRecords"
+        tools:layout="@layout/fragment_addrecord" />
 
     <fragment
         android:id="@+id/navigation_search"
-        android:name="com.example.my_dsu.ui.search.SearchFragment"
+        android:name="com.example.testing.ui.search.SearchFragment"
         android:label="@string/title_search"
         tools:layout="@layout/fragment_search" />
 
     <fragment
         android:id="@+id/navigation_settings"
-        android:name="com.example.my_dsu.ui.settings.SettingFragment"
-        android:label="@string/title_setting"
-        tools:layout="@layout/fragment_setting" />
+        android:name="com.example.testing.ui.settings.SettingFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" />
+
+
+
+
+
+
 </navigation>

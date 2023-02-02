@@ -7,7 +7,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="134dp"
-        android:src="@drawable/book"
+        android:src="@drawable/dsu"
         android:layout_marginTop="50dp"
         ></ImageView>
 

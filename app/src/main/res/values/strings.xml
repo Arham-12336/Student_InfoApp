@@ -1,10 +1,8 @@
 <resources>
-    <string name="app_name">My_dsu</string>
+    <string name="app_name">DSU Student Portal</string>
     <string name="title_dashboard">Dashboard</string>
-    <string name="title_favourite">Favourite</string>
-    <string name="title_add_records">Add Records</string>
+    <string name="title_favourites">Favourites</string>
+    <string name="title_addRecords">Add Records</string>
     <string name="title_search">Search</string>
-    <string name="title_setting">Settings</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_settings">Settings</string>
 </resources>

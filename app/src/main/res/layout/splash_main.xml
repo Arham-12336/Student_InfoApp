@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center"
-    android:background="@color/white">
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:gravity="center"
+android:background="@color/white">
 
 
     <ImageView
@@ -11,6 +11,6 @@
         android:layout_width="500dp"
         android:layout_height="300dp"
         android:layout_centerInParent="true"
-        android:src="@drawable/book" />
+        android:src="@drawable/dsu" />
 
 </RelativeLayout>
