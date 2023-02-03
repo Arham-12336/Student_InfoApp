@@ -1,4 +1,4 @@
-package com.example.my_dsu.ui.notifications
+package com.example.testing.ui.notifications
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.my_dsu.databinding.FragmentNotificationsBinding
+import com.example.testing.databinding.FragmentNotificationsBinding
 
 class NotificationsFragment : Fragment() {
 

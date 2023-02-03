@@ -1,4 +1,4 @@
-package com.example.my_dsu
+package com.example.testing
 
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -7,7 +7,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import com.example.my_dsu.databinding.ActivityMainBinding
+import com.example.testing.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,13 +22,14 @@ class MainActivity : AppCompatActivity() {
         val navView: BottomNavigationView = binding.navView
 
         val navController = findNavController(R.id.nav_host_fragment_activity_main)
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.navigation_dashboard, R.id.navigation_favourites,R.id.navigation_add_records,R.id.navigation_search,R.id.navigation_settings
+                R.id.navigation_dashboard, R.id.navigation_favourites,  R.id.navigation_addRecords ,  R.id.navigation_search ,  R.id.navigation_settings
             )
         )
+
+
+
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }

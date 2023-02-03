@@ -1,7 +1,7 @@
-package com.example.my_dsu.model.database
+package com.example.testing.model.database
 
 import androidx.room.*
-import com.example.my_dsu.model.datamodel.Record
+import com.example.testing.model.datamodel.Record
 
 
 @Dao

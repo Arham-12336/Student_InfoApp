@@ -1,12 +1,12 @@
-package com.example.my_dsu.model.database
+package com.example.testing.model.database
 
 import android.content.Context
 import androidx.room.*
-import com.example.my_dsu.model.datamodel.Record
+import com.example.testing.model.datamodel.Record
 
 @Database(entities = [Record::class], version = 1, exportSchema = false)
 abstract class RecordDatabase : RoomDatabase() {
-    abstract fun recordDao(): UserDoa
+    abstract fun recordDao(): RecordDao
 
     companion object {
         private var instance: RecordDatabase? = null

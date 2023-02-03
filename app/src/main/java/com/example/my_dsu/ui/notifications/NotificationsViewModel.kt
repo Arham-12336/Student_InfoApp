@@ -1,4 +1,4 @@
-package com.example.my_dsu.ui.notifications
+package com.example.testing.ui.notifications
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

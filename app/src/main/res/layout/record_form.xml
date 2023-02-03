@@ -4,34 +4,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="134dp"
-        android:src="@drawable/dsu"
-        android:layout_marginTop="50dp"
-        ></ImageView>
-
     <EditText
         android:id="@+id/et_first_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:hint="First Name" />
+        android:layout_marginTop="120dp"
+        android:hint="Name" />
 
     <EditText
-        android:layout_marginTop="50dp"
         android:id="@+id/et_last_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Last Name" />
+        android:layout_marginTop="50dp"
+        android:hint="Department" />
 
     <Button
         android:id="@+id/btnWriteData"
-        android:layout_width="145dp"
+        android:layout_width="113dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="250dp"
+        android:layout_marginLeft="230dp"
         android:layout_marginTop="80dp"
         android:onClick="onUploadClicked"
-        android:text="Register" />
+        android:text="submit" />
 
 </LinearLayout>

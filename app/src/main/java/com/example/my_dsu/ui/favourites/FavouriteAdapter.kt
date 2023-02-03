@@ -1,27 +1,37 @@
-package com.example.my_dsu.ui.favourites
+package com.example.testing.ui.favourites
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.my_dsu.databinding.ItemLikedFavRecBinding
-import com.example.my_dsu.model.datamodel.FavouriteRecord
+import com.example.testing.databinding.ItemLikedRecBinding
+import com.example.testing.databinding.ItemUnlikeRecBinding
+import com.example.testing.model.datamodel.FavouriteRecord
 
-class FavouriteAdapter(private val fav_record:List<FavouriteRecord>):RecyclerView.Adapter<FavouriteAdapter.FavViewHolder>() {
+class FavouriteAdapter(private val fav_records: List<FavouriteRecord>) : RecyclerView.Adapter<FavouriteAdapter.LikeViewHolder>(){
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FavViewHolder {
-        return FavViewHolder(ItemLikedFavRecBinding.inflate(LayoutInflater.from(parent.context),parent,false))
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LikeViewHolder {
+        return LikeViewHolder(
+            ItemLikedRecBinding.inflate(
+                LayoutInflater.from(parent.context),
+                parent,
+                false
+            )
+        )
     }
 
-    override fun onBindViewHolder(holder: FavViewHolder, position: Int) {
-        val fav_record=fav_record.get(position)
-        holder.binding.tvFavName.text=fav_record.name
-        if(!fav_record.isFav)
-            holder.binding.ivIconFav.visibility= View.GONE
+    override fun onBindViewHolder(holder: LikeViewHolder, position: Int) {
+        val fav_records = fav_records.get(position)
+        holder.binding.tvFavName.text = fav_records.FirstName
+        holder.binding.tvFavDesc.text =fav_records.lastName;
+
+
     }
 
     override fun getItemCount(): Int {
-        return fav_record.size
+        return fav_records.size
     }
-    class FavViewHolder(val binding: ItemLikedFavRecBinding):RecyclerView.ViewHolder(binding.root)
+
+    class LikeViewHolder(val binding: ItemLikedRecBinding): RecyclerView.ViewHolder(binding.root)
+    class UnlikeViewHolder(val binding: ItemUnlikeRecBinding): RecyclerView.ViewHolder(binding.root)
 }

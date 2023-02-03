@@ -19,9 +19,9 @@ private var favRecordList: MutableLiveData<List<FavouriteRecord>> = MutableLiveD
             for(i in 0..10){
                     records.add(
                         FavouriteRecord(
-                            R.drawable.avatar,
-                            "Aroon${i}",
-                            "Kumar" ))
+                            R.drawable.man,
+                            "Student ${i}",
+                            "Computer Science" ))
 
                 favRecordList.postValue(records)
             }
