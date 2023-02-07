@@ -18,15 +18,15 @@ An android application that provides a simple interface to displaying the inform
 
 ## Dashboard
 
-<img align="right" src="./images/dashboard.jpeg" width=400>
+<img align="center" src="./images/dashboard.jpeg" width=200>
 
 ## Favourites
 
-<img align="right" src="./images/favourites.jpeg" width=400>
+<img align="center" src="./images/favourites.jpeg" width=200>
 
 ## Add Record
 
-<img align="right" src="./images/adrecords.jpeg" width=400>
+<img align="center" src="./images/adrecords.jpeg" width=200>
 
 
 
